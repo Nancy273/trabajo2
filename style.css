@@ -45,6 +45,11 @@
     width: 200px;
     height: 80px;
     text-align: center;
+    transition: background-color 1s;
+}
+
+.opcion-menu:hover {
+    background-color: #ccccff;
 }
 
 /*flexbox*/
@@ -79,3 +84,20 @@
 .align-center {
     align-items: center;
 }
+
+.fondo-verde {
+    background-color: #9CEB02;
+    
+} 
+.fondo-turqueza {
+    background-color:#1FE1F2 ;
+}
+
+.fondo-gris {
+    background-color: #7BAD99;
+}
+
+.fondo-lila {
+    background-color: #E5D617;
+}
+

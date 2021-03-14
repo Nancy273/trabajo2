@@ -15,13 +15,13 @@
         <div class="flex flex-row"><img src="imagenes/gatos/gatito.jpeg" class="usuario-img"> <h6>usuario1</h6></div>
     </div>
 
-    <div class="border margin-1 flex flex-row justify-end">
+    <div class="border margin-1 flex flex-row justify-end fondo-verde">
         <p>Buscar en la web</p> <input type="text" id="texto-busqueda"> <!--Boton de buscar aqui-->
     </div>
-
+    
 
     <div class="flex flex-row justify-between">
-        <div id="caja-menu" class="border margin-1 flex flex-column justify-evenly align-center">
+        <div id="caja-menu" class="border margin-1 flex flex-column justify-evenly align-center fondo-lila">
             <h1>Menú</h1>
 
             <div class="opcion-menu">
@@ -49,7 +49,8 @@
         <!--Agregar Producto-->
         <!--action es el lugar donde enviar los datos-->
         <!--method es la manera de enviar al servidor-->
-        <div id="caja-formulario" class="border margin-1">
+        <div id="caja-formulario" class="border margin-1 fondo-turqueza">
+            
             <form action="" method="POST">
 
                 <label>Codigo *</label><input type="number"><button>Validar</button><br><br>
@@ -67,7 +68,7 @@
                 <label>fecha</label><input type="date"><br><br>
                 <label>estado</label>
             
-                <fieldset id="estado">
+                <fieldset id="estado" class="fondo-gris">
                     <input type="radio" name="estado" value="activo"><label>Activo</label>
                     <input type="radio" name="estado" value="suspendido"><label>Suspendido</label>
                     <input type="radio" name="estado" value="de baja"><label>De baja</label><br><br>
