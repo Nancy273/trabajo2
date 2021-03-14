@@ -1,0 +1,81 @@
+.cabecera {
+    color:white;
+    background-color: blue;
+    font-family: Verdana, Geneva, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 2px;
+    border-color: black;
+    justify-content: flex-end;
+}
+
+.usuario-img {
+    clip-path:circle(30% at 50% 50%);
+    filter: opacity(60%); 
+}
+
+.border {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.margin-1 {
+    margin: 10px;
+}
+
+#texto-busqueda {
+    height: 20px;
+    margin-top: 15px;
+}
+
+#caja-menu {
+    width: 30%;
+}
+
+#caja-formulario {
+    width: 70%;
+}
+
+.opcion-menu {
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    width: 200px;
+    height: 80px;
+    text-align: center;
+}
+
+/*flexbox*/
+
+.center {
+    align-self: center;
+}
+.derecha {
+    align-self: flex-end;
+}
+.flex {
+    display: flex;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-column {
+    flex-direction: column;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.justify-evenly {
+    justify-content: space-evenly;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.align-center {
+    align-items: center;
+}

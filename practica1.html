@@ -1,0 +1,91 @@
+<html>
+<head>    
+    <title>sistema integrado de gestión</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>|        
+
+<body>
+    
+
+
+</body>
+    <div class="cabecera margin-1 border flex flex-row">
+        <div class="center"><h1>Sistema integrado de gestión</h1></div>
+        <div class="flex flex-row"><img src="imagenes/gatos/gatito.jpeg" class="usuario-img"> <h6>usuario1</h6></div>
+    </div>
+
+    <div class="border margin-1 flex flex-row justify-end">
+        <p>Buscar en la web</p> <input type="text" id="texto-busqueda"> <!--Boton de buscar aqui-->
+    </div>
+
+
+    <div class="flex flex-row justify-between">
+        <div id="caja-menu" class="border margin-1 flex flex-column justify-evenly align-center">
+            <h1>Menú</h1>
+
+            <div class="opcion-menu">
+                <p>Agregar Producto</p>
+            </div>
+            
+
+            
+
+            <div class="opcion-menu">
+                <p>Administrar categrorías</p>
+                <!--Imagen de lapiz-->
+            </div>
+
+            <div class="opcion-menu">
+                <p>Existencias</p>
+                <!--Imagen base de datos-->
+            </div>
+
+            <div class="opcion-menu">
+                <p>Administrar pagos</p>
+                <!--Imagen de tarjeta credito-->
+            </div>
+        </div>
+        <!--Agregar Producto-->
+        <!--action es el lugar donde enviar los datos-->
+        <!--method es la manera de enviar al servidor-->
+        <div id="caja-formulario" class="border margin-1">
+            <form action="" method="POST">
+
+                <label>Codigo *</label><input type="number"><button>Validar</button><br><br>
+                <label>Nombre *</label><input type="text"><br><br>
+                <label>Abreviatura</label><input type="text"><br><br>
+                <label>Categoría *</label>
+                <select>
+                    <option>Panes especiales</option>
+                    <option>Lácteos</option>
+                    <option>Pasteles</option>
+                </select><br><br>
+                <label>RUC proveedor *</label><input type="number"><br><br>
+                <label>precio *</label><input type="number"><br><br>
+                <label>Color de etiqueta</label><input type="color"><br><br>
+                <label>fecha</label><input type="date"><br><br>
+                <label>estado</label>
+            
+                <fieldset id="estado">
+                    <input type="radio" name="estado" value="activo"><label>Activo</label>
+                    <input type="radio" name="estado" value="suspendido"><label>Suspendido</label>
+                    <input type="radio" name="estado" value="de baja"><label>De baja</label><br><br>
+                </fieldset><br><br>
+
+
+                <label>afecto a impuesto</label><input type="checkbox"><br><br>
+                <label>foto</label><button>Subir</button><input type="image" src=""><br><br>
+                <label>descripcion</label><textarea rows="5" cols="50"></textarea><br><br>
+
+                <button type="submit">Guardar</button> <button type="reset">Limpiar</button>
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+</html>
