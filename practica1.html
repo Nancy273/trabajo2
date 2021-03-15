@@ -2,9 +2,8 @@
 <head>    
     <title>sistema integrado de gestión</title>
     <link rel="stylesheet" href="style.css">
-
-</head>|        
-
+    <script src="https://kit.fontawesome.com/edde6265f2.js" crossorigin="anonymous"></script>
+</head>
 <body>
     
 
@@ -16,7 +15,7 @@
     </div>
 
     <div class="border margin-1 flex flex-row justify-end fondo-verde">
-        <p>Buscar en la web</p> <input type="text" id="texto-busqueda"> <!--Boton de buscar aqui-->
+        <p>Buscar en la web</p> <input type="text" id="texto-busqueda"> <button class="lupa"> </button>
     </div>
     
 
@@ -26,29 +25,28 @@
 
             <div class="opcion-menu fondo-naranja">
                 <p>Agregar Producto</p>
+                <i class="fa fa-plus-circle"></i>
             </div>
             
 
-            
-
+        
             <div class="opcion-menu fondo-naranja">
                 <p>Administrar categrorías</p>
-                <i class="far fa-pencil"></i>
+                <i class="fa fa-pencil"></i>
             </div>
 
             <div class="opcion-menu fondo-naranja">
                 <p>Existencias</p>
-                <!--Imagen base de datos-->
+                <i class="fa fa-database"></i>
             </div>
 
             <div class="opcion-menu fondo-naranja">
                 <p>Administrar pagos</p>
-                <!--Imagen de tarjeta credito-->
+                <i class="fa fa-credit-card-alt"></i>
+
             </div>
         </div>
-        <!--Agregar Producto-->
-        <!--action es el lugar donde enviar los datos-->
-        <!--method es la manera de enviar al servidor-->
+        
         <div id="caja-formulario" class="border margin-1 fondo-turqueza">
             
             <form action="" method="POST">
