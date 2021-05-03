@@ -2,6 +2,7 @@
 <head>    
     <title>sistema integrado de gestión</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/edde6265f2.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -23,9 +24,28 @@
         <div id="caja-menu" class="border margin-1 flex flex-column justify-evenly align-center fondo-lila">
             <h1>Menú</h1>
 
-            <div class="opcion-menu fondo-naranja">
+            <div class="opcion-menu fondo-naranja" data-toggle="modal" data-target="#exampleModal">
                 <p>Agregar Producto</p>
                 <i class="fa fa-plus-circle"></i>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Agregar productos aqui</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                    Formulario para agregar productos
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
             </div>
             
 
@@ -48,10 +68,17 @@
         </div>
         
         <div id="caja-formulario" class="border margin-1 fondo-turqueza">
+            <br>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                El formulario no esta enviando los datos a ningun lugar.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
             
             <form action="" method="POST">
 
-                <label>Codigo *</label><input type="number"><button>Validar</button><br><br>
+                <label>Codigo *</label><input type="number"><button type="button" class="btn btn-primary">Validar</button><br><br>
                 <label>Nombre *</label><input type="text"><br><br>
                 <label>Abreviatura</label><input type="text"><br><br>
                 <label>Categoría *</label>
@@ -62,7 +89,7 @@
                 </select><br><br>
                 <label>RUC proveedor *</label><input type="number"><br><br>
                 <label>precio *</label><input type="number"><br><br>
-                <label>Color de etiqueta</label><input type="color"><br><br>
+                <label>Color de etiqueta</label><input type="color" data-toggle="tooltip" title="Elige el color"><br><br>
                 <label>fecha</label><input type="date"><br><br>
                 <label>estado</label>
             
@@ -74,14 +101,18 @@
 
 
                 <label>afecto a impuesto</label><input type="checkbox"><br><br>
-                <label>foto</label><button>Subir</button><input type="image" src=""><br><br>
+                <label>foto</label><button type="button" class="btn btn-primary">Subir</button><input type="image" src=""><br><br>
                 <label>descripcion</label><textarea rows="5" cols="50"></textarea><br><br>
 
-                <button type="submit">Guardar</button> <button type="reset">Limpiar</button>
+                <button type="submit" class="btn btn-success">Guardar</button> <button type="reset" class="btn btn-warning">Limpiar</button>
 
             </form>
         </div>
     </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
 
 
 
